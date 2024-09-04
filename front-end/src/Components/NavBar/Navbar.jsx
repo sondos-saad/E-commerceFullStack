@@ -6,7 +6,7 @@ function Navbar() {
     const [menu, setMenu] = useState("home");
 
   return (
-    <div className="bg-[#66796B]">
+    <div className="bg-main">
         <div className="flex justify-between items-center gap-2 w-[80%] mx-auto py-[.5rem] text-white ">
             <h1 className="font-bold text-[2rem]">CH.</h1>
             <ul className="flex gap-[1rem] items-center ">
@@ -19,7 +19,7 @@ function Navbar() {
                 <FaSearch className="text-[1.3rem] cursor-pointer"/>
                 <FaCartPlus className="text-[1.3rem] cursor-pointer"/>
                 <div className="absolute right-[90px] top-[-2px] min-w-[10px] min-h-[10px] rounded-full bg-[#f9f9f9]"></div>
-                <button className="bg-[#D7A184]  px-[1rem] py-[.3rem] rounded-3xl font-bold hover:border-[1px] hover:border-white hover:bg-transparent  duration-300">Sign In</button>
+                <button className="bg-secondary  px-[1rem] py-[.3rem] rounded-3xl font-bold hover:border-[1px] hover:border-white hover:bg-transparent  duration-300">Sign In</button>
             </div>
         </div>
     </div>
