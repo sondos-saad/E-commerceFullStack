@@ -22,105 +22,105 @@ export const data = [
     {
         id:1,
         img:photo1 ,
-        name : "Chair 1",
+        name : "Office Chair",
         desc : "Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the  source.",
         price : 100
     },
     {
         id:2,   
         img:photo2,
-        name : "Chair 1",
+        name : "Modern Chair ",
         desc : "Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the  source.",
         price : 100
     },
     {
         id:3,   
         img:photo3,
-        name : "Chair 1",
+        name : "Green Chair ",
         desc : "Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the  source.",
         price : 100
     },
     {
         id:4,   
         img:photo4,
-        name : "Chair 1",
+        name : "Blue Chair ",
         desc : "Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the  source.",
         price : 100
     },
     {
         id:5,   
         img:photo5,
-        name : "Chair 1",
+        name : "Sea Chair",
         desc : "Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the  source.",
         price : 100
     },
     {
         id:6,   
         img:photo6,
-        name : "Chair 1",
+        name : "Wooden Chair ",
         desc : "Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the  source.",
         price : 100
     },
     {
         id:7,   
         img:photo7,
-        name : "Chair 1",
+        name : "Black Chair",
         desc : "Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the  source.",
         price : 100
     },
     {
         id:8,   
         img:photo8,
-        name : "Chair 1",
+        name : "Modern Chair",
         desc : "Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the  source.",
         price : 100
     },
     {
         id:9,   
         img:photo9,
-        name : "Chair 1",
+        name : "Chair Table",
         desc : "Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the  source.",
         price : 100
     },
     {
         id:10,   
         img:photo10,
-        name : "Chair 1",
+        name : "Wooden Chair",
         desc : "Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the  source.",
         price : 100
     },
     {
         id:11,   
         img:photo11,
-        name : "Chair 1",
+        name : "Office Chair",
         desc : "Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the  source.",
         price : 100
     },
     {
         id:12,   
         img:photo12,
-        name : "Chair 1",
+        name : "Home Chair",
         desc : "Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the  source.",
         price : 100
     },
     {
         id:13,   
         img:photo16,
-        name : "Chair 1",
+        name : "Chair Outdoor",
         desc : "Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the  source.",
         price : 100
     },
     {
         id:14,   
         img:photo14,
-        name : "Chair 1",
+        name : "Chair Outdoor",
         desc : "Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the  source.",
         price : 100
     },
     {
         id:15,   
         img:photo15,
-        name : "Chair 1",
+        name : "Office Chair ",
         desc : "Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the  source.",
         price : 100
     },

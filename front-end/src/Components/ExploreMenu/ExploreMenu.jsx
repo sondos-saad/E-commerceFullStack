@@ -5,11 +5,11 @@ import photo4 from '../../assets/4.jpg'
 
 function ExploreMenu() {
   return (
-    <section className='py-[4rem] '>
+    <section className=''>
         <h1 className='text-[2rem] font-bold text-center text-main'>Explore our menu</h1>
         <div className='w-[150px] h-[4px] bg-main mx-auto my-[1rem]'></div>
         <p className='text-gray-700 text-center mb-[1rem] w-[80%] mx-auto '>Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the  source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de " (The Extremes of Good and Evil) by Cicero, written in 45 BC.</p>
-        <div className='flex justify-center gap-[1rem]  w-[50%] mx-auto'>
+        <div className='grid sm:grid-cols-4 grid-cols-2 gap-[.5rem] w-[80%] lg:w-[50%] mx-auto'>
             <div className='w-[100px] h-[200px] '>
                 <img src={photo2} alt="photo" className='w-full h-full rounded-full object-cover'/>
             </div>

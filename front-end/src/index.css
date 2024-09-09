@@ -10,7 +10,8 @@
 body{
     min-height: 100vh;
 }
-section{
+section, footer{
+    padding: 3rem 0;
     width: 80%;
     margin: 0 auto;
 }
