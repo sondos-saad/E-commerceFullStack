@@ -5,7 +5,7 @@ import photo4 from '../../assets/4.jpg'
 
 function ExploreMenu() {
   return (
-    <section className=''>
+    <section className='' id='explore'>
         <h1 className='text-[2rem] font-bold text-center text-main'>Explore our menu</h1>
         <div className='w-[150px] h-[4px] bg-main mx-auto my-[1rem]'></div>
         <p className='text-gray-700 text-center mb-[1rem] w-[80%] mx-auto '>Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the  source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de " (The Extremes of Good and Evil) by Cicero, written in 45 BC.</p>

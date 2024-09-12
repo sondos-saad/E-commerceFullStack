@@ -4,7 +4,7 @@ import HomePhoto from '../../assets/imgbin_chair-png.png';
 function Header() {
     
   return (
-    <div className=""  >
+    <div className=" relative mt-[6rem]" id='home' >
        <section className='grid md:grid-cols-2 gap-[1rem]'>
             <div className="">
                 <h2 className='text-[1.5rem] lg:text-[2.5rem] font-bold text-main mb-[.5rem]'> Order your favorite Peace for your house</h2>

@@ -4,15 +4,21 @@ import { MdEmail } from "react-icons/md";
 
 function Footer() {
   return (
-    <footer className='bg-main w-full text-white '>
+    <footer className='bg-main w-full text-white ' id="footer">
         <div className='w-[80%] mx-auto py-[2rem] grid md:grid-cols-3 gap-[2rem]'>
             <div className="">
                 <h1 className="font-bold text-[2rem] text-secondary mb-[1rem]">CH.</h1>
                 <p className='text-gray-200  mb-[1rem] text-[15px]'>Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the  source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de " (The Extremes of Good and Evil) by Cicero, written in 45 BC.</p>
                 <div className="flex gap-[1rem] items-center text-[1.3rem]">
-                    <FaFacebookF  className="cursor-pointer"/>
-                    <IoLogoTwitter className="cursor-pointer"/>
-                    <MdEmail className="cursor-pointer"/>
+                    <div className="cursor-pointer border-[1px] p-2 rounded-full">
+                        <FaFacebookF  />
+                    </div>
+                    <div className="cursor-pointer border-[1px] p-2 rounded-full">
+                        <IoLogoTwitter className="cursor-pointer"/>
+                    </div>
+                    <div className="cursor-pointer border-[1px] p-2 rounded-full">
+                        <MdEmail className="cursor-pointer"/>
+                    </div>
                 </div>
             </div>
             <div className="">

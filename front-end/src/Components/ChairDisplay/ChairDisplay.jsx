@@ -22,7 +22,7 @@ function ChairDisplay() {
     };
 
   return (
-    <section>
+    <section  id='products'>
         <h2 className='text-[2rem] font-bold text-center text-main'>Top chair for you</h2>
         <div className='w-[150px] h-[4px] bg-main mx-auto my-[1rem]'></div>
         <div className='sm:w-[500px] mx-auto mt-[1rem]'>
