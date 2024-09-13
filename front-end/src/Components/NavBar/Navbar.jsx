@@ -16,7 +16,7 @@ function Navbar({setShowLogin}) {
   return (
     <nav className="bg-main w-full fixed z-10 top-0 left-0 right-0 ">
         <div className="flex justify-between items-center gap-2 w-[80%] mx-auto py-[.5rem] text-white ">
-            <h1 className="font-bold text-[2rem]">CH.</h1>
+            <Link to="/"><h1 className="font-bold text-[2rem]">CH.</h1></Link>
            <div className=" md:block hidden">
                 <ul className="flex gap-[1rem] items-center">
                     <li onClick={()=> setMenu("home")}  className={`cursor-pointer duration-300 ${menu ==="home" ? "text-[#EFDFCC] " : "text-white"}`}> 
@@ -36,7 +36,7 @@ function Navbar({setShowLogin}) {
             
             <div className="flex gap-[1rem] items-center relative">
                 <FaSearch className="text-[1.3rem] cursor-pointer"/>
-                <FaCartPlus className="text-[1.3rem] cursor-pointer" />
+                 <Link to="/cart"><FaCartPlus className="text-[1.3rem] cursor-pointer" /></Link>
                 <div className="absolute right-[90px] top-[-2px] min-w-[10px] min-h-[10px] rounded-full bg-[#f9f9f9]"></div>
                 <button className="bg-secondary  px-[1rem] py-[.3rem] rounded-3xl font-bold hover:border-[1px] hover:border-white hover:bg-transparent  duration-300" onClick={() => setShowLogin(true)}>Sign In</button>
             </div>

@@ -13,7 +13,7 @@ function LoginPopup({setShowLogin}) {
                 </div>
            </div>
            <div className='grid gap-[.5rem] mb-[1rem]'>
-                {currState === "Login" ? <> </> : <input type='text' placeholder='Your name' required className="rounded-2xl p-2 outline-none"/> }    
+                {currState === "Login" ? "" : <input type='text' placeholder='Your name' required className="rounded-2xl p-2 outline-none"/> }    
                 <input type='email' placeholder='Your email' required className="rounded-2xl p-2 outline-none"/>
                 <input type='password' placeholder='Password' required className="rounded-2xl p-2 outline-none"/>
            </div>
