@@ -1,13 +1,15 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import { FaCartPlus } from "react-icons/fa";
 import { FaBars } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import Footer from "../Footer/Footer";
+import { StoreContext } from "../../context/StoreContext";
 
 function Navbar({setShowLogin}) {
     const [menu, setMenu] = useState("home");
     const [open , setOpen ] = useState(false)
+
+    const {getTotalCartAmount} = useContext(StoreContext)
 
     const handleMenuLinks =() =>{
         setOpen(!open);
@@ -37,7 +39,8 @@ function Navbar({setShowLogin}) {
             <div className="flex gap-[1rem] items-center relative">
                 <FaSearch className="text-[1.3rem] cursor-pointer"/>
                  <Link to="/cart"><FaCartPlus className="text-[1.3rem] cursor-pointer" /></Link>
-                <div className="absolute right-[90px] top-[-2px] min-w-[10px] min-h-[10px] rounded-full bg-[#f9f9f9]"></div>
+                 {getTotalCartAmount()? <div className="absolute right-[90px] top-[-2px] min-w-[10px] min-h-[10px] rounded-full bg-[#ff3c3c]"></div> :null }
+                
                 <button className="bg-secondary  px-[1rem] py-[.3rem] rounded-3xl font-bold hover:border-[1px] hover:border-white hover:bg-transparent  duration-300" onClick={() => setShowLogin(true)}>Sign In</button>
             </div>
             <div className="text-[1.3rem] cursor-pointer md:hidden block duration-300" onClick={handleMenuLinks}>

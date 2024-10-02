@@ -1,9 +1,12 @@
 import React, { useContext } from 'react'
 import { StoreContext } from '../../context/StoreContext'
+import { useNavigate } from 'react-router-dom'
 
 function Cart() {
 
-    const {cartItems, removeFromCart ,data} = useContext(StoreContext);
+    const {cartItems, removeFromCart ,data , getTotalCartAmount} = useContext(StoreContext);
+
+    const navigate = useNavigate();
 
   return (
     <section className='py-[6rem]'>
@@ -43,20 +46,20 @@ function Cart() {
                     <div className='my-[2rem]'>
                         <div className='flex justify-between my-[.5rem]'>
                             <p>Subtotal</p>
-                            <p>{0}</p>
+                            <p>${getTotalCartAmount()}</p>
                         </div>
                         <hr/>
                         <div className='flex justify-between my-[.5rem]'>
                             <p>Delivery Fee</p>
-                            <p>{2}</p>
+                            <p>${getTotalCartAmount() === 0 ? 0 : 2}</p>
                         </div>
                         <hr/>
                         <div className='flex justify-between my-[.5rem]'>
                             <b>Total</b>
-                            <b>{0}</b>
+                            <b>${getTotalCartAmount() === 0 ? 0 : getTotalCartAmount() + 2}</b>
                         </div>
                     </div>
-                    <button className='bg-secondary text-white w-full p-[.5rem] rounded-2xl'>PROCEED TO CHECKOUT</button>
+                    <button onClick={()=>navigate("/order")} className='bg-secondary text-white w-full p-[.5rem] rounded-2xl'>PROCEED TO CHECKOUT</button>
                 </div>
                 <div className='w-full mx-auto flex justify-center'>
                     <div>
